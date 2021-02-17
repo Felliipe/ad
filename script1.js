@@ -76,18 +76,18 @@ function  color() {
     return 'rgba(' + o(r() * s) + ',' + o(r() * s) + ',' +  o(r() * s)  + ')';
   };
 
-    var inst = document.getElementById('box')
+    //var inst = document.getElementById('box')
     // var inst = document.getElementById('incone')
     // var inst = document.getElementById('footer a')
-    inst.addEventListener('mouseover', entrou)
-    inst.addEventListener('mouseout', saiu)
+    //inst.addEventListener('mouseover', entrou)
+    //inst.addEventListener('mouseout', saiu)
 
-    function entrou() {
-      inst.style.backgroundColor = '#3f3f3f'
-    }
-    function saiu() {
-      inst.style.backgroundColor = ''
-    }
+    //function entrou() {
+      //inst.style.backgroundColor = '#3f3f3f'
+    //}
+    //function saiu() {
+      //inst.style.backgroundColor = ''
+    //}
 
 
     var porcent = document.querySelector('.porcent');
