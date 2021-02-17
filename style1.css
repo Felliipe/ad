@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Open+Sans:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+body {
+    background: #d0d0d0;
+}
+
+#box {
+    background: #202020;
+    border-radius: 10px;
+    width: auto;
+    margin: 1rem 4rem 0rem;
+    box-shadow: 0px 0px 10px 5px  rgb(54, 116, 250);
+    
+    border: none;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+
+    color: rgb(54, 116, 250);
+    font-size: 50px;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+    margin: 2rem 4rem 2rem;
+    width: auto;
+    place-content: space-around;
+
+    background: #0a1431;
+
+    border-radius: 10px;
+}
+
+h1, #time{
+    color: rgb(54, 116, 250);
+    font-family: 'Bungee Inline', cursive;
+    font-style: normal;
+    font-weight: normal;
+    width: 117px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    height: 35px;
+    width: 321px;
+}
+
+ul li a {
+    color: #d0d0d0;
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+}
+
+ul li #inicio:first-child {
+    margin-left: 0px;
+}
+
+div#box h2{
+    font-family: 'Teko', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#incone {
+    height: 50px;
+}
+
+a img {
+    width: 50px;
+}
+
+#recarregar:hover {
+    animation: rotacao 3s;
+    animation-iteration-count: infinite;
+}
+footer a:hover {
+    font-size: 120%;
+}
+
+li a:hover {
+    font-size:180%;
+    color: rgb(255, 255, 255);
+    text-decoration:underline rgb(54, 116, 250);
+}
+
+footer {
+    font-size: 20px;
+    border: none;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    color: rgb(54, 116, 250);
+
+    height: 34px;
+    padding: 10px;
+}
+
+#px1, #px3 {
+    display: none;
+}
+
+@keyframes rotacao {
+    to {
+        transform: rotate(360deg)
+    }
+
+}
+
+@media only screen and (max-width: 760px) {
+    #box {
+        box-shadow: 0px 0px 10px 5px rgb(255, 46, 46);
+
+        color: rgb(250, 54, 54);
+
+        margin: 1rem 4rem 0rem;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+        margin: 1rem 4rem 0rem;
+    }
+    ul {
+        height: 30px;
+    }
+    
+    h1, #time {
+        height: 50px;
+    }
+
+    h1, footer, #time {
+        color: rgb(250, 54, 54);
+    }
+    li a:hover {
+        text-decoration:underline red;
+    }
+    #px2 {
+        display: none;
+    }
+
+    #px1 {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1360px) {
+    #box  {
+        box-shadow: 0px 0px 10px 5px rgb(241, 77, 77);
+
+        color: rgb(255, 255, 255);
+    }
+    h1, footer, #time {
+        color: rgb(255, 255, 255);
+    }
+    li a:hover {
+        text-decoration:underline rgb(255, 255, 255);;
+    }
+    #px1, #px2 {
+        display: none;
+    }
+
+    #px3 {
+        display: block;
+    }
+}
