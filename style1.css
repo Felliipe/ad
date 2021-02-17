@@ -80,6 +80,9 @@ a img {
     width: 50px;
 }
 
+#next {
+    font-size: 40px;
+}
 #recarregar:hover {
     animation: rotacao 3s;
     animation-iteration-count: infinite;
