@@ -44,7 +44,9 @@ footer {
     font-size: 20px;
 
 }
-
+#next {
+    font-size: 50px;
+}
 #px1 {
     display: none;
 }
