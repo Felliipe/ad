@@ -162,6 +162,9 @@ footer {
         text-align: center;
         justify-content: center;
     }
+    ul li #inicio:first-child {
+        margin-left: 10px;
+    }
 }
 @media only screen and (min-width: 1360px) {
     #box  {
