@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Galeria de foto</title>
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery__prev"></div>
+        <div class="gallery__next"></div>
+        <div class="gallery__stream">
+          <div class="gallery__item bg-1"></div>
+          <div class="gallery__item bg-2"></div>
+          <div class="gallery__item bg-3"></div>
+          <div class="gallery__item bg-4"></div>
+          <div class="gallery__item bg-5"></div>
+          <div class="gallery__item bg-6"></div>
+          <div class="gallery__item bg-7"></div>
+        </div>
+      </div>
+
+      <div class="retrun"><a href="index.html">Voltar</a></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  var stream = document.querySelector('.gallery__stream');
+  var items = document.querySelectorAll('.gallery__item');
+  var prev = document.querySelector('.gallery__prev');
+  var next = document.querySelector('.gallery__next');
+
+  prev.addEventListener('click', function() {
+    stream.insertBefore(items[items.length - 1], items[0]);
+    items = document.querySelectorAll('.gallery__item');
+  });
+
+  next.addEventListener('click', function() {
+    stream.appendChild(items[0]);
+    items = document.querySelectorAll('.gallery__item');
+  });
+});
+    </script>
+</body>
+</html>
