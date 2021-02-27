@@ -80,8 +80,9 @@ a img {
     width: 50px;
 }
 
-#next {
+#return, #proximo{
     font-size: 40px;
+    color: #ffff;
 }
 #recarregar:hover {
     animation: rotacao 3s;
